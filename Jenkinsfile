@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        cloudshareDockerMachine()
+        dockerNode(image: 'sebp/elk')
       }
     }
   }
